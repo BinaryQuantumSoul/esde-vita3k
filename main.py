@@ -26,7 +26,7 @@ def prompt_yes_no(text: str):
 
 if __name__ == "__main__":
     if not game_dir:
-        game_dir = prompt_non_empty('Please provide vita es-de rom directory, roms must be in .vpk/.zip format: ')
+        game_dir = prompt_non_empty('Please provide vita es-de rom directory: ')
     is_name = prompt_in_set('Are the files named with title-name (1) or title-id (2) ? ', ['1','2']) == '1'
 
     if prompt_yes_no(f'Proceed with FILENAMES: {"title-name" if is_name else "title-id"}, DIRECTORY: {game_dir} ?'):

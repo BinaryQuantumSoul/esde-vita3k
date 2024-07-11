@@ -15,7 +15,7 @@ for url in urls:
 
         data = json.loads(content)
         for row in data['table']['rows'][1:]:
-            game_data[row['c'][0]['v'].replace('-', '')] = row['c'][1]['v'].replace(':', ' -')
+            game_data[row['c'][0]['v'].replace('-', '')] = row['c'][1]['v'].replace(':', ' -').replace('™', '')
 
     os.remove('game-data-in.json')
 
