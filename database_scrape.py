@@ -2,7 +2,11 @@ import wget
 import json
 import os
 
-urls =  ['https://docs.google.com/spreadsheets/d/1SvfQrAavckZH9fBCo48bpfIx3jWpMDUOCPnDWMekMBg/gviz/tq?tqx=out:json', 'https://docs.google.com/spreadsheets/d/1muoSZ-ZyJfyb1D5Sd26ZRr2cwDyFmPz5aLyFFe9JELQ/gviz/tq?tqx=out:json']
+urls =  [
+    'https://docs.google.com/spreadsheets/d/1muoSZ-ZyJfyb1D5Sd26ZRr2cwDyFmPz5aLyFFe9JELQ/gviz/tq?tqx=out:json',
+    'https://docs.google.com/spreadsheets/d/1SvfQrAavckZH9fBCo48bpfIx3jWpMDUOCPnDWMekMBg/gviz/tq?tqx=out:json',
+    'https://docs.google.com/spreadsheets/d/18vnzs4VnqKlqqIgHXenqQjMq2ygMUnfc28WKSYC7-vo/gviz/tq?tqx=out:json'
+]
 game_data = {}
 
 for url in urls:
